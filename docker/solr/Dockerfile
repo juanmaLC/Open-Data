@@ -1,5 +1,5 @@
 FROM solr:6.6.5
-MAINTAINER Open Knowledge
+
 
 # Enviroment
 ENV SOLR_CORE ckan
