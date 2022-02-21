@@ -1,0 +1,372 @@
+/* Barra superior de la web ---------> */
+
+#superior{
+
+
+  min-height: 30px;
+  background-color: #d12b2e;
+
+}
+
+#superior a {
+
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+
+
+
+}
+
+#superior a:hover {
+
+   color: white;
+   background: #af2326;
+
+}
+
+
+#superior div > ul > li{
+
+  display: inline-flex;
+  list-style: none;
+
+}
+
+
+#superior div {
+
+  float: right;
+
+}
+
+
+
+
+/* Nav bar ------------------------> */
+.container{
+
+  height: 105px;
+  background-color: #af2326;
+  min-width: 100%;
+}
+
+.banner #titulo {
+
+  float: left;
+  padding-top: 30px;
+
+  width: 50%;
+}
+
+
+.banner > #titulo > a {
+
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: bembo;
+
+
+}
+
+.banner > #titulo > a:hover {
+
+  color: #dddddd;
+
+}
+
+
+
+.banner #imagen{
+
+
+
+  float: right;
+  padding-top: 4px;
+
+}
+
+.banner img{
+
+  min-height: 60px;
+  float: right;
+
+}
+
+
+/* CSS para la agrupación en columna de graficas ----------------->*/
+
+#fila1, #graficaMesAño, #graficaDatasetsTotales{
+
+  display: inline-block;
+  width: 100%;
+
+}
+
+#fila1 > .dash-graph{
+
+
+  width: 50%;
+
+}
+
+#fila2 > .dash-graph {
+
+
+
+  width: 50%;
+
+}
+
+
+#fila3 > .dash-graph {
+
+
+  width: 100%;
+
+}
+
+
+#fila3{
+
+  width: 100%;
+  display: inline-block;
+
+}
+
+#fila2, #graficaFormatos, #graficaDV{
+
+  display: inline-block;
+  width: 100%;
+
+}
+
+
+
+
+#fila1 > div {
+
+  display: inline-block;
+  width: 50%;
+
+}
+
+
+main, .banner, #superior>div, footer > #footerSuperior, footer > #inferior > h2{
+
+
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+
+#fila1 > #selectorDataset > label {
+
+  font-weight: bold;
+  text-align: center;
+  color: black;
+
+
+}
+
+
+body{
+
+  background-color: #dddddd;
+  margin: 0;
+  color: black;
+}
+
+main h1{
+
+  text-align: center;
+  color: black;
+  background-color: #dddddd;
+  font-family: bembo;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+#fila1, #fila2, #fila3{
+
+  padding-top: 10px;
+  background-color: white;
+  margin-top: 30px;
+
+  border: 3px solid #ccc;
+  border-radius: 25px;
+  height: 650px;
+
+}
+
+
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+
+  color: black;
+
+
+}
+
+.Select-clear-zone, .Select-arrow-zone{
+
+  color: black;
+
+}
+
+
+
+
+
+/* Footer --------------------------> */
+
+div > footer {
+
+  min-height: 50px;
+  background-color: #af2326;
+  margin-top: 50px;
+}
+
+body > footer {
+
+  display: none;
+
+}
+
+footer > #footerSuperior > #col1 {
+
+  float: left;
+  width: 50%;
+
+
+
+}
+
+footer > #footerSuperior > #col1  div {
+
+
+
+  width: 70%;
+
+
+}
+
+
+footer > #footerSuperior #col2 {
+
+  float: right;
+  width: 50%;
+
+}
+
+footer img {
+
+
+  margin-top: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+
+
+}
+
+
+footer > #footerSuperior #col2{
+
+  padding-top: 25px;
+  padding-left: 22%;
+  color: white;
+}
+
+footer > #footerSuperior #col2 > ul > li{
+
+  padding-top: 11px;
+  list-style: none;
+
+}
+
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+
+  color: black;
+
+}
+
+footer h2 {
+
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+footer {
+
+
+  font-family: bembo;
+
+}
+
+
+footer >#footerSuperior{
+
+
+
+}
+
+
+/* Tam footer inferioe */
+footer > #inferior {
+
+
+  clear: both;
+  background-color: #d12b2e;
+  height: 98px;
+
+
+}
+
+footer > #inferior > h2 {
+
+  float: right;
+  color: white;
+  padding: 2px;
+
+}
+
+
+footer >#inferior > ul {
+
+
+  clear: both;
+  text-align: center;
+
+
+}
+
+footer > #inferior > ul > li{
+
+  display:inline;
+  padding-left: 30px;
+
+  color: #fefefe;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+
+footer a:hover{
+
+  color: gray;
+
+}

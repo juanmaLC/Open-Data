@@ -1,0 +1,5 @@
+uwsgi
+dash
+dash-bootstrap-components
+pandas
+plotly
