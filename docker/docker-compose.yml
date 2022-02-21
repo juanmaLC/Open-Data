@@ -1,0 +1,86 @@
+version: "3.9"
+
+
+volumes:
+  ckan_storage:
+
+services:
+  dash:
+    container_name: dash
+    build:
+      context: dash
+      dockerfile: Dockerfile
+    ports:
+      - "8989:8989"
+     
+  ckan:
+    container_name: ckan
+    build:
+      context: ckan
+      dockerfile: Dockerfile
+      args:
+          - CKAN_SITE_URL=${CKAN_SITE_URL}
+   
+    environment:
+      - CKAN_SQLALCHEMY_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+      - CKAN_DATASTORE_WRITE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/datastore_default
+      - CKAN_DATASTORE_READ_URL=postgresql://datastore_default:333@db/datastore_default
+      - CKAN_DATAPUSHER_URL=http://datapusher:8800
+      - CKAN_SITE_URL=${CKAN_SITE_URL}
+        
+    ports:
+      - "5000:5000"
+    links:
+      - solr
+      - db
+      - redis
+      - datapusher
+    depends_on:
+      - solr
+      - db
+      - redis
+      - datapusher
+    volumes:
+      - ckan_storage:/var/lib/ckan
+    extra_hosts:
+      - "ckan:172.17.0.1"
+      
+  db:
+    container_name: db
+    build:
+      context: postgresql
+      dockerfile: Dockerfile
+      args:
+        - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+        - POSTGRES_USER=${POSTGRES_USER}
+        - POSTGRES_DB=${POSTGRES_DB}
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DB=${POSTGRES_DB}
+  
+
+  solr:
+    container_name: solr
+    build:
+      context: solr
+      dockerfile: Dockerfile
+    
+ 
+
+  redis:
+    container_name: redis
+    image: redis:latest
+    
+  datapusher:
+    container_name: datapusher
+    image: clementmouchet/datapusher
+    ports:
+      - "8800:8800"
+    extra_hosts:
+      - "ckan:172.17.0.1"
+
+    
+  
+ 
+
