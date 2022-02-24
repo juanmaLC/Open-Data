@@ -67,3 +67,26 @@ Dar permisos de lectura al usuario de datapusher:
 ```sh
 docker exec ckan /usr/lib/ckan/default/bin/ckan -c /etc/ckan/default/ckan.ini datastore set-permissions | docker exec -i db psql -U ckan_default
 ```
+
+
+# Environment
+
+Para la construcción de los contenedores con docker compose, será necesario un archivo .env, donde se indican los parametros de los vulnerables de los servicios como por ejemplo, contraseñas y usuarios de los servicios.
+
+Un ejemplo podría ser:
+
+```sh
+# CKAN
+CKAN_SITE_ID=default
+CKAN_SITE_URL=http://ckan:5000
+CKAN_PORT=5000
+
+# DB
+POSTGRES_USER=ckan_default
+POSTGRES_DB=ckan_default
+POSTGRES_PASSWORD=1234
+POSTGRES_PORT=5432
+
+# DATASTORE
+DATASTORE_READONLY_PASSWORD=datastore
+```
