@@ -2,7 +2,7 @@
 
 [DataPusher](https://github.com/ckan/datapusher)
 
-Servicio orientado al almacenamiento de datos estructurados. Estos datos son alamncenados dentro de la base de datos de datastore en postgresql.
+Servicio orientado al almacenamiento de datos estructurados. Estos datos son almacenados dentro de la base de datos de datastore en postgresql.
 
 Se dispone de un dockerfile con los pasos requeridos para desplegar un contenedor que nos provee de dicho servicio.
 
