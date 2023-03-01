@@ -1,0 +1,137 @@
+main > h1 {
+
+  text-align: center;
+  margin: 3%;
+
+}
+
+#fila1, #graficaMesAño, #graficaDatasetsTotales{
+
+  display: inline-block;
+  width: 100%;
+
+}
+
+#fila1 > .dash-graph{
+
+  width: 50%;
+
+}
+
+
+
+#fila2, #graficaFormatos, #graficaDV{
+
+  display: inline-block;
+  width: 100%;
+
+}
+
+#fila2 > .dash-graph {
+
+
+  display: inline-block;
+  width: 50%;
+
+}
+
+
+#fila2 > div {
+
+  display: inline-block;
+  width: 50%;
+
+}
+
+
+main, .banner, #superior>div{
+
+
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+
+#fila2 > #selectorDataset > label {
+
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+
+body{
+
+  background-color: #dddddd;
+
+}
+
+
+#superior{
+
+
+  min-height: 30px;
+  background-color: #d12b2e;
+
+}
+
+
+.container{
+
+  height: 105px;
+
+}
+
+.banner #titulo {
+
+  float: left;
+  padding: 10px;
+  max-width: 50%;
+
+}
+
+.banner #imagen{
+
+  float: right;
+
+}
+
+.banner img{
+
+  min-height: 70px;
+
+}
+
+
+#superior a {
+
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+
+
+
+}
+
+#superior a:hover {
+
+   color: white;
+   background: #af2326;
+
+}
+
+
+#superior div > ul > li{
+
+  display: inline-flex;
+  list-style: none;
+
+}
+
+
+#superior div {
+
+  float: right;
+
+}

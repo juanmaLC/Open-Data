@@ -1,0 +1,143 @@
+main > h1 {
+
+  text-align: center;
+  margin: 3%;
+
+}
+
+#fila1, #graficaMesAño, #graficaDatasetsTotales{
+
+  display: inline-block;
+  width: 100%;
+
+}
+
+#fila1 > .dash-graph{
+
+  width: 50%;
+
+}
+
+
+
+#fila2, #graficaFormatos, #graficaDV{
+
+  display: inline-block;
+  width: 100%;
+
+}
+
+#fila2 > .dash-graph {
+
+
+  display: inline-block;
+  width: 50%;
+
+}
+
+
+#fila2 > div {
+
+  display: inline-block;
+  width: 50%;
+
+}
+
+
+main, .banner{
+
+
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+
+#fila2 > #selectorDataset > label {
+
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+
+body{
+
+  background-color: #dddddd;
+
+}
+
+
+#superior{
+
+
+  min-height: 30px;
+  background-color: #d12b2e;
+
+}
+
+
+.container{
+
+  background-color: #af2326;
+  min-width: 100%;
+  min-height: 50px;
+
+}
+
+
+
+
+.banner > img{
+
+
+  max-height: 60px;
+  margin: 10px 0px 10px 0px;
+}
+
+
+.banner div{
+
+  float:right;
+
+}
+
+.banner #menu{
+
+  #padding-top: 20px;
+
+}
+
+
+.banner div > ul > li{
+
+  display: inline-flex;
+
+  list-style: none;
+  padding: 22px;
+}
+
+
+.banner div > ul{
+
+
+  float: right;
+
+}
+
+
+.banner a {
+
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 15px;
+
+}
+
+.banner a:hover {
+
+   color: white;
+   background: #d12b2e;
+
+}
